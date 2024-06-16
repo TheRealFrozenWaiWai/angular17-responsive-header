@@ -1,9 +1,12 @@
 header {
   padding: 10px;
-  background: #02534d;
+  background: rgb(200, 199, 199,0.5);
+  /* position: fixed; */
+  /* z-index: 1000;
+  width: 100%; */
 }
 .logo {
-  width: 90px;
+  width: 100px;
 }
 .logo:hover {
   cursor: pointer;
@@ -12,22 +15,27 @@ header {
   margin-top: 24px;
 }
 .desktop_menu ul {
+  
   padding: 0;
   margin: 0;
 }
 .desktop_menu ul li {
   list-style-type: none;
-  color: white;
+  color: rgb(0, 0, 0);
   display: inline-block;
   font-size: 18px;
   margin-left: 26px;
 }
-.desktop_menu ul li:hover {
+.desktop_menu ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: rgb(0, 0, 0); /* Set link color */
+}
+.desktop_menu ul li a:hover {
   font-size: 19px;
   font-weight: bold;
   cursor: pointer;
-  color: yellow;
-  transition: 0.3s ease-in-out;
+  color: rgb(18, 6, 241);
+  transition: 0.2s ease-in-out;
 }
 .menu-icon {
   display: none;
@@ -39,9 +47,10 @@ header {
     right: -280px;
     transition: 0.4s ease-in-out;
     top: 64px;
-    background: #02534d;
+    background: rgb(123, 123, 123);
     width: 280px;
     height: 100%;
+    z-index: 1000;
   }
   .desktop_menu ul li {
     display: block;
@@ -55,6 +64,7 @@ header {
     color: white;
     font-size: 40px;
     padding-top: 10px;
+    z-index: 1001;
   }
   .mobile_menu {
     right: 0;

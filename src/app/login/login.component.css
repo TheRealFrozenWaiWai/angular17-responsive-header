@@ -1,0 +1,55 @@
+/* src/app/login/login.component.css */
+.page-container {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center items vertically */
+  height: 100vh; /* Full viewport height */
+  background-image: url('/assets/Flags.jpg'); /* Replace with your background image URL */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  padding-right: 100px; /* Add some padding to the right side */
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  max-width: 500px; /* Optional: Limit the width of the form */
+  max-height: 500px;
+  width: 100%;
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+}
+
+.login-container .form-group {
+  margin-bottom: 15px;
+}
+
+.login-container .btn {
+  width: 100%;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .page-container {
+    justify-content: center; /* Center items horizontally */
+    padding-right: 20px; /* Reduce padding on the right side */
+    padding-left: 20px; /* Add padding on the left side for symmetry */
+  }
+
+  .login-container {
+    max-width: 100%; /* Allow the form to take full width */
+    padding: 15px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 10px; /* Further adjust padding for smaller screens */
+  }
+}
