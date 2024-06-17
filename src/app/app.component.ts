@@ -8,6 +8,8 @@ import { ContactComponent } from './contact/contact.component';
 import { SuperadminDashboardComponent } from './superadmin-dashboard/superadmin-dashboard.component';
 import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import * as i2 from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     SuperadminDashboardComponent,
     RegisterComponent,
+    FontAwesomeModule,
     ReactiveFormsModule
   ],
   templateUrl: './app.component.html',

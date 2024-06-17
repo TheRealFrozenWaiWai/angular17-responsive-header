@@ -20,9 +20,14 @@ export class LoginComponent {
     });
   }
 
-  onSubmit() {
+  onSubmit(event: Event) {
+    event.preventDefault(); // Prevent default form submission
+
     if (this.loginForm.valid) {
       const { email, password } = this.loginForm.value;
+      console.log('Email:', email);
+      console.log('Password:', password);
+
       if (email === 'superadmin@email.com' && password === 'superadmin123') {
         this.router.navigate(['/superadmin-dashboard']);
       } else {
