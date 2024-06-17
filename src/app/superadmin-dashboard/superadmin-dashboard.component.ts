@@ -24,4 +24,8 @@ export class SuperadminDashboardComponent {
   navigateToDelete() {
     // Implement navigation to delete component
   }
+
+  navigateToLogin() {
+    this.router.navigate(['/login']);
+  }
 }
